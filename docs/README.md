@@ -1,8 +1,8 @@
-<div style="text-align:center;">
-  <img src="https://socialify.git.ci/msio808/quizbit/image?description=1&descriptionEditable=CLI%20based%20quiz%20game%20written%20in%20C&font=Rokkitt&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fmsio808%2Fquizbit%2Fmain%2Fdocs%2Fimg%2Fqmark.png&name=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Auto" width="50%" height="50%" alt="project-cover"/>
-    <h1>QUIZBIT - QUIZ GAME</h1>
-
-<p>
+<p style="text-align: center">
+   <img style="text-align: center;" src="https://socialify.git.ci/msio808/quizbit/image?description=1&descriptionEditable=CLI%20based%20quiz%20game%20written%20in%20C&font=Rokkitt&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fmsio808%2Fquizbit%2Fmain%2Fdocs%2Fimg%2Fqmark.png&name=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Auto" width="50%" height="50%" alt="project-cover"/>
+</p>
+<h1 style="text-align: center">QUIZBIT - QUIZ GAME</h1>
+<p style="text-align: center">
     <em><code>► CLI based quiz game written in C</code></em>
 </p>
 <!--<p>
@@ -11,16 +11,15 @@
 	<img src="https://img.shields.io/github/languages/top/msio808/quizbit.git?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/msio808/quizbit.git?style=flat&color=0080ff" alt="repo-language-count">
 </p>-->
-<p>
-   <em>Softwares/Technologies Used</em>
+<p style="text-align: center"><em>Softwares/Technologies Used</em></p>
 
-   **CLION ┃ SQLite3 ┃ OpenSSL ┃ CMake ┃ Makefile ┃ valgrind**
+<p style="text-align: center;">
+<strong>CLION ┃ SQLite3 ┃ OpenSSL ┃ CMake ┃ Makefile ┃ valgrind </strong>
 </p>
 
-<hr>
-</div>
 
 <hr>
+
 
 <div id="quick-links">
 <details>
