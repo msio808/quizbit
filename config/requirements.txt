@@ -1,0 +1,18 @@
+# Project Dependencies
+
+# Memory checking tool
+valgrind
+
+# SQLite3 for database handling
+sqlite3
+
+# OpenSSL for hashing functions
+libssl-dev
+
+# Regex library
+libpcre3-dev
+
+# Compilers & Build tools
+CMake
+Make
+gcc
