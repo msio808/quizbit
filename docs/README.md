@@ -199,7 +199,7 @@ cd quizbit/config/
 - Select a quiz category.
 - Answer the quiz questions and track your score.
 
-## 🚀 Screenshots & Demo
+## 🚀 Screenshot
 
 ![Watch the demo](https://raw.githubusercontent.com/msio808/quizbit/main/docs/img/screenshot.png)
 
