@@ -15,11 +15,13 @@ set(SOURCES
         ../src/db/database.c
         ../src/db/questions.c
         ../src/core/account.c
-        ../src/core/gamecore.c
         ../src/core/userprofile.c
         ../src/utils/authutil.c
         ../src/utils/gameutil.c
         ../src/utils/utilities.c
+        ../src/core/gamecore.c
+        ../src/core/gamemath.c
+        ../src/core/gameplay.c
         ../src/console/terminal.c
 )
 
@@ -28,8 +30,9 @@ set(HEADERS
         ../include/db.h
         ../include/emojis.h
         ../include/global.h
-        ../include/playerstats.h
+        ../include/gamecore.h
         ../include/utilities.h
+        ../include/gamemath.h
 )
 
 add_executable(main ${HEADERS} ${SOURCES})

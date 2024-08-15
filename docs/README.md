@@ -1,4 +1,4 @@
--
+<hr>
 <div align="center">
    <img style="text-align: center;" src="https://socialify.git.ci/msio808/quizbit/image?description=1&descriptionEditable=CLI%20based%20quiz%20game%20written%20in%20C&font=Rokkitt&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fmsio808%2Fquizbit%2Fmain%2Fdocs%2Fimg%2Fqmark.png&name=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Auto" width="50%" height="50%" alt="project-cover"/>
 
@@ -10,6 +10,7 @@
 	<img src="https://img.shields.io/github/languages/top/msio808/quizbit.git?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/msio808/quizbit.git?style=flat&color=0080ff" alt="repo-language-count">
 </p>-->
+
 <p style="text-align: center"><em>Softwares/Technologies Used</em></p>
 <p><strong>CLION ┃ SQLite3 ┃ OpenSSL ┃ CMake ┃ Makefile ┃ valgrind </strong></p>
 </div>
@@ -30,6 +31,7 @@
     <li><a href="#installation">⚙️ Installation</a></li>
     </ul>
     </li>
+    <li><a href="#usage">🚀 Usage</a></li>
     <li><a href="#contribute">🤝 Contributing</a></li>
     <li><a href="#license">📄 License</a></li>
     <li><a href="#acknowledgments">👏 Acknowledgments</a></li>
@@ -95,6 +97,7 @@
 <summary id="repo-structure" style="font-size: 20px"> 📂 Repository Structure </summary>
 
 ```
+.
 ├── config
 │   ├── build.sh
 │   ├── CMakeLists.txt
@@ -104,13 +107,13 @@
 │   ├── img
 │   │   └── qmark.png
 │   └── README.md
-├── Doxyfile
 ├── include
 │   ├── console.h
 │   ├── db.h
 │   ├── emojis.h
+│   ├── gamecore.h
+│   ├── gamemath.h
 │   ├── global.h
-│   ├── playerstats.h
 │   └── utilities.h
 ├── LICENSE
 └── src
@@ -119,6 +122,8 @@
     ├── core
     │   ├── account.c
     │   ├── gamecore.c
+    │   ├── gamemath.c
+    │   ├── gameplay.c
     │   └── userprofile.c
     ├── db
     │   ├── database.c
@@ -128,7 +133,6 @@
         ├── authutil.c
         ├── gameutil.c
         └── utilities.c
-
 
 ```
 </details>
@@ -140,19 +144,7 @@
 
 <div>
 
-<h2 id="modules"> 🧩 Modules </h2>
-
-The game is divided into the following components:
-
-1. **Authentication Module**: Handles user login and signup processes, including password hashing & authentication.
-2. **Quiz Module**: Manages quiz question selection, presentation, score calculation, points & badges allocation.
-3. **Profile Management**: Allows users to view and edit their profiles, delete their accounts, or reset their profile data.
-4. **Database Module**: Interfaces with the SQLite database to store and retrieve user data.
-
-<hr>
-
 <h2 id="get-started"> 🚀 Getting Started </h2>
-
 <h3> Requirements </h3>
 <em>
 <code> ► gcc make cmake sqlite3 valgrind libssl-dev libpcre3-dev </code>
@@ -193,9 +185,28 @@ cd quizbit/config/
 ```sh
 ./build.sh --clean OR ./build.sh --clean-all
 ```
+
 </div>
 
 <hr>
+
+<h2 id="usage"> Usage </h2>
+
+- After building and running the project, Choose "Sign Up" and follow the prompts to create an account.
+- Login to your account.
+- Use the arrow keys to navigate through the game
+- Click on the ```gameplay help``` menu to read more about the game.
+- Select a quiz category.
+- Answer the quiz questions and track your score.
+
+## 🚀 Screenshots & Demo
+
+[![Watch the demo](./img/screenshot.png)](./img/demo.mp4)
+
+## 🛠️ Improvements
+- Some of the functions in the ```src/core/gamemath.c``` needs improvements</li>
+
+- The ```SIGWINCH``` functions located in the ```src/console/terminal.c``` also needs improvements.
 
 
 <div>
@@ -254,7 +265,8 @@ cd quizbit/config/
 - 🔗 [_`termios(3) - Linux man page`_](https://linux.die.net/man/3/termios)
       
 - 🔗 [_`nanosleep(2) — Linux manual page`_](https://man7.org/linux/man-pages/man2/nanosleep.2.html)
-  
+- 🔗 [_`ANSI Color Codes`_](https://talyian.github.io/ansicolors/)
+
 <a href="#quick-links"> quick links </a>
 
 </footer>

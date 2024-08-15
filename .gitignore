@@ -1,0 +1,7 @@
+config/cmake-build-debug
+config/cmake-build-debug-event-trace
+.clang-format
+.idea
+build
+data
+logs

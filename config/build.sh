@@ -50,8 +50,8 @@ setup_directories() {
   if [ ! -f ../logs/memcheck.log ]; then
       touch ../logs/memcheck.log
   fi
-  if [ ! -f ../logs/errorlogs.txt ]; then
-      touch ../logs/errorlogs.txt
+  if [ ! -f ../logs/errorlogs.log ]; then
+      touch ../logs/errorlogs.log
   fi
 }
 
@@ -66,7 +66,7 @@ run_project() {
   # Run program with ./main or debug with valgrind
   if [[ "$1" == "--memcheck" ]]; then
       echo "Running valgrind to check memory usage of the program..."
-      valgrind --tool=memcheck --leak-check=full --track-origins=yes --log-file=logs/memcheck.log ./main
+      valgrind --tool=memcheck --track-origins=yes --log-file=../logs/memcheck.log ./main #--leak-check=full
   else
       echo "Build successful. running the program..."
       ./main
