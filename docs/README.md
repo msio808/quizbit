@@ -203,6 +203,11 @@ cd quizbit/config/
 
 [![Watch the demo](https://raw.githubusercontent.com/msio808/quizbit/main/docs/img/screenshot.png)](https://raw.githubusercontent.com/msio808/quizbit/main/docs/img/demo.mp4)
 
+<div align="center">
+   <video width="60%" height="60%" controls>
+   <source src="https://raw.githubusercontent.com/msio808/quizbit/main/docs/img/demo.mp4" type="video/mp4">
+   </video>
+</div>
 ## 🛠️ Improvements
 - Some of the functions in the ```src/core/gamemath.c``` needs improvements</li>
 
