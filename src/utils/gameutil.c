@@ -3,7 +3,6 @@
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function gets the padding value of the item to be printed within the box
  *
  * @param item The length of the string/item to be printed
@@ -16,7 +15,6 @@ int get_padding(const size_t item) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function converts the given rgb values to 256 bit mode
  *
  * @param rgb RGB color structure
@@ -33,7 +31,6 @@ uint8_t rgb_256(const RGB_t rgb) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function reads user input from the specified stream using fgets
  *        and replaces the trailing newline character with a null character.
  *
@@ -71,7 +68,6 @@ ssize_t input(const char *prompt, char *array, const size_t size) {
 
 
 /**
- * @author Muhammed A. Senghore
  *
  * @brief This function reads a password from the user without echoing the input
  *        and returns the length of the password.
@@ -116,7 +112,6 @@ ssize_t get_pass(const char *prompt, char *passwd, const size_t size) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief Displays a progress bar at the specified position on the screen.
  *
  * @param progress The percentage value of the progress bar.
@@ -144,7 +139,6 @@ void progress_bar(const size_t progress, const size_t length) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calls the 'progress bar' function
  *        and displays a loader before starting any new game
  *
@@ -173,7 +167,6 @@ void display_progress_bar(const int x, const int y, const char *message) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays a loader while user credentials authenticate.
  *
  * @param x X-coordinate value of the cursor
@@ -196,7 +189,6 @@ void display_loader(const int x, const int y, const char *message) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function uses the getch function and listens for only the arrow keys
  * @param key The value of the key pressed
  * 
@@ -227,7 +219,6 @@ int get_arrow_key(int key) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function highlights the currnet line that the user scrolled to
  *
  * @param key value of the key pressed to move to the next/previous line
@@ -257,7 +248,6 @@ int highlight_line(const int key, const int len, const int line) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays a banner containing a title text with characters on both sides.
  *
  * @param colors A pointer to the set of RGB colors for styling the text foreground & background
@@ -296,7 +286,6 @@ void display_banner(const RGBset_t *colors, const char *content) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calls the 'display_banner' function and also displays player info on the top of the page
  *
  * @param content A pointer to the content of the banner to be printed
@@ -340,7 +329,6 @@ void display_header(const int box_offset, const char *content, pstats_t *player)
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This displays the page/items on the terminal. It calls the function to
  *        draw the box, print the banner, the heading, subheading, menu, & other contents on the terminal
  *
@@ -375,7 +363,6 @@ void display_main_page(const int box_offset, const size_t highlight, const size_
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays the footer info on the bottom of thw page
  *
  * @param box_offset offset position of the box
@@ -389,7 +376,6 @@ void display_footer(const int box_offset) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function prints the menu/options while highlighting the line for users to select
  *
  * @param highlight The line number to be highlighted
@@ -428,7 +414,6 @@ void print_menu(const int x, int y, const size_t highlight,
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays the account requirements for new users
  *
  * @param x X-coordinate value of the cursor

@@ -616,7 +616,6 @@ static const quiz_t general_knowledge[] = {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function inserts quiz data (questions, choices, and correct choice) into their respective tables.
  *
  * @param db A pointer to the SQLite3 database connection.
@@ -673,7 +672,6 @@ bool insert_quiz_data(sqlite3 *db, const quiz_t *quizArray, const size_t arraySi
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calls the 'insert_quiz_data' function which inserts all the quiz questions and answers
  *        with the correct choice to their respective tables in the database
  *

@@ -3,7 +3,6 @@
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief Function to exit the program, clears the terminal then display a notice message before exiting
  *
  * @param EXIT_CODE The value of the exit status
@@ -21,7 +20,6 @@ void exit_program(const int EXIT_CODE) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function is a custom sleep function that delays the process in milliseconds using the nanosleep function
  *
  * @param milliseconds The amount of time to delay in milliseconds
@@ -37,7 +35,6 @@ void delay(const uint32_t milliseconds) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function Resets/Clears/Initializes the fields of
  *        the any structure and it's members to zero
  *
@@ -50,7 +47,6 @@ void struct_memset(void *Session, const size_t size) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function prompts user for confirmation and only accept Y/N characters.
  *
  * @param prompt A pointer to the prompt/question to be displayed to the user
@@ -69,7 +65,6 @@ int get_confirmation(const char *prompt) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This is a custom printf function
  *
  * @param fmt A pointer to the formated string to print to the user
@@ -87,7 +82,6 @@ void print(const char *fmt,...) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This is a custom printf function that prints styled texts to stdout with given X,Y coordinate values
  *
  * @param x_coord X-coordinate of the cursor
@@ -115,7 +109,6 @@ void mvprint(const int x_coord, const int y_coord, const styles_t textStyle, con
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief Prints colored text on the screen when the code/functions encounter errors.
  *
  * @param x_coord X-coordinate of the cursor
@@ -147,7 +140,6 @@ void print_error(const int x_coord, const int y_coord, const char *error,...) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief Prints colored text on the screen for successful operations.
  *
  * @param x_coord X-coordinate of the cursor
@@ -179,7 +171,6 @@ void print_success(const int x_coord, const int y_coord, const char *success,...
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function logs error messages to a log file
  *
  * @param __FUNC A pointer to the function where the error is encountered
@@ -216,7 +207,6 @@ void log_error(const char *__FUNC, const char *__FILE, const int __LINE, const c
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function gets the current date & time and stores it in a formatted string.
  *
  * @returns A dynamically allocated pointer to the currently date & time, caller is responsible for freeing the memory

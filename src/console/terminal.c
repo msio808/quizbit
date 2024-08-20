@@ -4,7 +4,6 @@
 
 struct termios default_term_attr;
 /**
- * @author Muhammed A. Senghore
  * @brief This function stores the default attributes of the terminal to the above termios structure
  */
 void initialize_terminal(void) {
@@ -16,7 +15,6 @@ void initialize_terminal(void) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This Function restores the default attributes of the terminal after the program terminates
  */
 void restore_terminal(void) {
@@ -25,7 +23,6 @@ void restore_terminal(void) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function handles the SIGSEGV/SIGINT signal (caused by pressing CTRL+C).
  *        It resets the terminal attributes back to default when SIGINT/SIGSEGV is received.
  * @param signal signal
@@ -57,7 +54,6 @@ void signal_handler(const int signal) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function set's up and calls the 'signal_handler' function which listens for 'SIGINT'
  */
 void setup_signal_handler(void) {
@@ -69,7 +65,6 @@ void setup_signal_handler(void) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function uses escape sequence '\033c', to reset
  *        the terminal to its initial state (ie: clear the terminal).
 **/
@@ -80,7 +75,6 @@ void clr_scr(void) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function uses ANSI escape secuence to move the cursor to the given X-Y coordinates
  *
  * @param x_coord X-coordinate of the terminal
@@ -92,7 +86,6 @@ void set_console_cursor_position(const int x_coord, const int y_coord) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function uses ansi escape sequence to enable/disable cursor on the terminal
  *
  * @param mode Mode to determine whether to enable/disable the cursor
@@ -103,7 +96,6 @@ void set_console_cursor_mode(const int mode) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function sets the terminal foreground color to given rgb values
  *
  * @param color rgb color code of the foreground
@@ -114,7 +106,6 @@ void set_fg_color(const uint8_t color) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function sets the terminal background color to given rgb values
  *
  * @param color rgb color code of the background
@@ -125,7 +116,6 @@ void set_bg_color(const uint8_t color) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function styles the terminal text attributes
  *
  * @param textStyle text mode/style
@@ -152,7 +142,6 @@ void set_console_text_attr(const int textStyle) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function sets the terminal foreground & background color to the given set of RGB values
  *
  * @param colors : rgb color set of the foreground and background
@@ -164,7 +153,6 @@ void set_console_color_attr(const RGBset_t colors) {
 
 
 /**
- * @author Muhammed A. Senghore
  * Function to delete 'n' number of character from the terminal
  * @param n The number of characters to delete
  */
@@ -179,7 +167,6 @@ void del_char(const size_t n) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function draws a box on the terminal at start
  *
  * @param x_coord X-coordinate of the cursor
@@ -225,7 +212,6 @@ void draw_box(const int x_coord, const int y_coord, const int width, const int h
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function get's the size of the terminal windo
  *
  * @param rows height of the window
@@ -246,7 +232,6 @@ int get_win_size(int *rows, int *cols) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function detects whenever the window is resized and exits if the size is
  *        less than the minimum height and width oof the terminal window
  *
@@ -272,7 +257,6 @@ void handle_sigwinch(const int sig) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief THis function sets up the sigwinch handler and set the appropriate value for the offset position of the box
  *
  * @param offset_pos The variable to hold the offset position of the box to be printed

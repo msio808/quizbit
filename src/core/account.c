@@ -4,7 +4,6 @@
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function prompts users to signup for a new account.
  *        It reads input from user, checks if the given details meet the requirements
  *        then finalizes the registration process and store the data to the database
@@ -91,7 +90,6 @@ void signup(const int box_offset) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief Handles the login process, prompting users to enter their credentials.
  *
  * @param box_offset offset position value of the box to be printed in the terminal
@@ -164,7 +162,6 @@ void login(const int box_offset) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function logs out the current user session by deallocating
  *        the memory then redirecting to homepage
  *
@@ -181,7 +178,6 @@ void logout(const int box_offset, void *Session) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function manages the player account by calling either the edit or delete function
  *
  * @param box_offset offset position value of the box to be printed in the terminal
@@ -237,7 +233,6 @@ void manage_account(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calls the delete, edit, or reset account functions based on the status of the 'mode' variable
  *        The function is called in the 'manage account' function above
  *
@@ -288,7 +283,6 @@ void modify_account(const int box_offset, const int mode, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function allows the player to edit and update their account information,
  *        such as name, surname, username, or password.
  *
@@ -427,7 +421,6 @@ void edit_account(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function prompts the user to edit their account data
  *
  * @param x_coord X-coordinate value of the cursor position
@@ -452,7 +445,6 @@ ssize_t edit_field(const int x_coord, const int y_coord, const char *fieldName, 
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function allows the player to delete their account, removing all
  *        associated data from the players & users table in the database
  *
@@ -493,7 +485,6 @@ void delete_account(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function resets the currenty logged in players stats/data back to default
  *
  * @param box_offset offset position value of the box to be printed in the terminal
@@ -545,7 +536,6 @@ void reset_account_data(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function prompts new users to enter their data when signing up for a new account
  *
  * @param user A pointer to the account_t structure to store new user data

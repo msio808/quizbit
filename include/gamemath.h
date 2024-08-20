@@ -1,6 +1,5 @@
 /**
  * @file gamemath.h
- * @author Muhammed A. Senghore
  * @brief This header file defines function prototypes related to mathematical operations done in the Quiz Game.
  *        Operations like calculating bonuses to be assigned, game completion/performance rate, and many more.
 **/

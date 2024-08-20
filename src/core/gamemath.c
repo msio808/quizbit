@@ -4,7 +4,6 @@
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calculates the new average score of the player after every quiz game
  *
  * @param avg_score current average score of the player
@@ -23,7 +22,6 @@ uint32_t get_average_score(const uint32_t avg_score, const uint32_t new_score, c
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calculate the average time spent per each game played
  *
  * @param old_time The current average time
@@ -38,7 +36,6 @@ uint32_t get_average_time(const uint32_t old_time, const double new_time, const 
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This functions calculates the highest score achieved by the currently logged-in player
  *
  * @param score The current score of the player
@@ -52,7 +49,6 @@ uint32_t get_highest_score(const uint32_t score, const uint32_t new_score) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calculates the total correctly answered questions after every game
  *
  * @param score The newly acquired score of the player after the game
@@ -65,7 +61,6 @@ uint32_t get_total_correct_answers(const uint32_t score) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calculates the total number of incorrectly answered questions
  *
  * @param score newly acquired score of the player after the quiz
@@ -78,8 +73,7 @@ uint32_t get_total_incorrect_answers(const uint32_t score) {
 
 
 /**
- * @author Muhammed A. Senghore
- * @author This function counts the total number of questions that were answered by the player
+ * @brief This function counts the total number of questions that were answered by the player
  *
  * @param skipped The number of questions that were skipped
  *
@@ -91,7 +85,6 @@ uint32_t get_total_question_attempted(const uint32_t skipped) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calculates the percentage of the score after the quiz game
  *
  * @param p The percent value of the score to calculate
@@ -105,7 +98,6 @@ double get_percentage(const double p, const double n) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calculates the total number of games completed bby the player
  *
  * @param skipped The number of questions that were skipped during the game
@@ -118,8 +110,7 @@ uint32_t games_completed(const uint32_t skipped) {
 
 
 /**
- * @author Muhammed A. Senghore
- * @author This function calculates the performance rate of the player after every game
+ * @brief This function calculates the performance rate of the player after every game
  *
  * @param c_ans number of correct answers
  * @param g_played number of games played
@@ -132,7 +123,6 @@ double get_performance_rate(const uint32_t c_ans, const uint32_t g_played) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calculated the quiz completion rate of the player
  *
  * @param q_attmpt Total number of questions attempted by the player
@@ -146,7 +136,6 @@ double get_completion_rate(const uint32_t q_attmpt, const uint32_t g_played) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function is used to update the longes streak of the player which is
  *        updated when a player achieves 90% or more in a game
  *
@@ -165,7 +154,6 @@ uint32_t get_lstreaks(const uint32_t new_score, const uint32_t old_streak) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calls all the above function and update the player stats
  *
  * @param player A pointer to the player stats structure of the currently logged-in player
@@ -202,7 +190,6 @@ void getnew_playerstats(pstats_t *player, const uint32_t score, const uint32_t b
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function rewards players with badges based on their player stats
  *
  * @param player A pointer to the currently logged in player stats structure
@@ -271,7 +258,6 @@ void unlock_achievements(pstats_t *player, const uint32_t score, const double ti
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calculates the time difference between the
  *        previously played date & time and the most recent played date & time
  *
@@ -295,7 +281,6 @@ double get_time_difference(const char *old_time, const char *new_time) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function assigns bonus to players after the quiz challenge have been completed
  *        It only assign bonus to players that have correctly answered atleast half of the questions
  *

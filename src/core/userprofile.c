@@ -2,7 +2,6 @@
 #include "../../include/utilities.h"
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function initializes the stats for the demo accounts & players stats.
  *
  * @param demoAccount A pointer to the Account 'account_t' structure
@@ -25,7 +24,6 @@ bool init_default_player_stats(account_t *demoAccount, pstats_t *defaultPlayer) 
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function initializes the newly registered player stats
  *
  * @param newPlayer A pointer to the Player Stats 'pstats_t' structure
@@ -81,7 +79,6 @@ bool init_new_player_stats(pstats_t *newPlayer, account_t *newAccount) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function randomly generates a new player ID after a new signup.
  *
  * @param id A pointer to the 'id' array to store the generated player ID.

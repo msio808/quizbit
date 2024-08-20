@@ -1,6 +1,5 @@
 /**
  * @file db.h
- * @author Muhammed A. Senghore
  * @brief This header file defines function prototypes & structures related to database operations used in the Game.
 **/
 #ifndef DB_H

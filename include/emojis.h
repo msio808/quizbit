@@ -1,6 +1,5 @@
 /**
  * @file emojis.h
- * @author Muhammed A. Senghore
  * @brief This header file defines Macros for emjis & badges used in the Game.
 **/
 #ifndef EMOJIS_H

@@ -1,6 +1,5 @@
 /**
  * @file gamecore.h
- * @author my-self
  * @brief This header file defines the structures and function prototypes necessary
  *        for handling player stats, account details, and some game-related information.
 **/

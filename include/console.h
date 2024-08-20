@@ -1,6 +1,5 @@
 /**
  * @file console.h
- * @author Muhammed A. Senghore
  * @brief This header file contains functions, structures, & constant values for terminal control functions.
 **/
 #ifndef CONSOLE_H

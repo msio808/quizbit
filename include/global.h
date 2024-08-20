@@ -1,6 +1,5 @@
 /**
  * @file global.h
- * @author Muhammed A. Senghore
  * @brief This header file defines constant global values & function flags of the game.
 **/
 #ifndef GLOBAL_H

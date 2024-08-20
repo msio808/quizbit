@@ -1,6 +1,5 @@
 /**
  * @file utilities.h
- * @author my-self
  * @brief This header file defines utility functions for various tasks needed in the Game.
  *        Including functions for terminal control, user input handling, password hashing,
  *        some database operations, and username/password validation/authentication.

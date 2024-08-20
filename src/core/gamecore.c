@@ -3,7 +3,6 @@
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays the displays available options on the homepage.
  *        Users can choose to login, signup, play as guest, or exit the program.
  *
@@ -61,7 +60,6 @@ void homepage(const int BOX_OFFSET) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays the main menu options, including gameplay, help, settings, and logout.
  *
  * @param player A pointer to the user account structure representing the current player.
@@ -115,7 +113,6 @@ void mainmenu(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays menu options for game stats and account management utilities.
  *
  * @param player A pointer to the user account structure representing the current player.
@@ -169,7 +166,6 @@ void settings(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays help/guide information on playing the game.
  *
  * @param player A pointer to the player's account structure.
@@ -211,7 +207,6 @@ void display_help(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief Displays gameplay options, allowing the player to choose categories before starting the game.
  *
  * @param player A pointer to the user account structure representing the current player.
@@ -262,7 +257,6 @@ void gameplay(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calls the 'play as guest' feature for  users who don't want to signup/login to their account
  *
  * @param BOX_OFFSET Offset value of the box to be printed in the terminal window
@@ -319,7 +313,6 @@ void guestplayer_mode(const int BOX_OFFSET) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function resets the currently logged-in player's scores back to 0
  * @deprecated replaced by the '@reset_player_data' function
  *
@@ -342,7 +335,6 @@ void reset_score(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays the top five players with the highest scores from the database.
  *        The players are ranked in order of current score, which updates after every game.
  *
@@ -427,7 +419,6 @@ void display_scoreboard(const int box_offset, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function displays all the stats  & achievements of the currently logged-in player
  *
  * @param box_offset Offset position value of the box

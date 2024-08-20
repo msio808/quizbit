@@ -3,7 +3,6 @@
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function reads 10 random questions along with their choices, from the given table in the database
  *
  * @param db A pointer to the SQLite3 database connection.
@@ -64,7 +63,6 @@ bool get_questions(sqlite3 *db, quiz_t *questions, const char *tableName, const 
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function writes the randomly generated questions by the get_questions function,
  *        to the quiz_t structure and then displays the questions for the player to answer.
  *
@@ -175,7 +173,6 @@ void display_questions(const int box_offset, pstats_t *player, const char *categ
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function keeps records of the answers the user entered while playing and displays them after the game.
  *
  * @param box_offset Offset position value of the box to be printed
@@ -223,7 +220,6 @@ void display_answered(const int box_offset, pstats_t *player, quiz_t *quest) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function compares the selected choice to the correct choice and return the score of that question.
  *
  * @param questions A pointer to the quiz questions and answers structure
@@ -255,7 +251,6 @@ uint32_t check_answer(quiz_t *questions, const short qid) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function is only called when user wants to play as guest
  *        It displays 5 random question from a random game category
  */

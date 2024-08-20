@@ -19,7 +19,6 @@ static regex_t __uname, __passwd;
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function matches a string against a regex pattern.
  *
  * @param regex A pointer to the regex structure.
@@ -63,7 +62,6 @@ bool regex_match(regex_t *regex, const char *pattern, const char *string) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function checks if a given password is valid.
  *
  * @param passwd A pointer to the password string to validate.
@@ -102,7 +100,7 @@ bool is_valid_passwd(const char *passwd) {
 }
 
 
-/** @author Muhammed A. Senghore
+/**
  * @brief This function checks if a given username is valid.
  *
  * @param uname A pointer to the username string to validate.
@@ -118,7 +116,6 @@ bool is_valid_uname(const char *uname) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function calls both functions to validate a username and password.
  *
  * @param uname A pointer to the username string to validate.
@@ -135,7 +132,6 @@ bool valid_credentials(const char *uname, const char *passwd) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function hashes a user password using SHA256 algorithm.
  *
  *        The function was written with the help of the doucmentation and code samples
@@ -196,7 +192,6 @@ char *sha256_hashpass(const char *passwd) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function checks the availability of a given username by checking
  *        if there is an existing user account with the specified username in the database.
  *
@@ -245,7 +240,6 @@ bool is_username_taken(const char *uname) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function validates login credentials by checking if the provided username and password
  *        match an existing user account in the database.
  *

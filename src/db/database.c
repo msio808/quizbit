@@ -3,7 +3,6 @@
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function creates a new database for the game and initializes necessary tables.
  *        The function creates 5 tables : 'users' to store user details after signing up,
  *        'players' and 'badges' table to keep track of player records,
@@ -119,7 +118,6 @@ bool create_new_database(void) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function inserts new user and player data into the 'users', 'players', & 'badges' table of the game db
  *
  * @param user A pointer to the user account structure.
@@ -251,7 +249,6 @@ bool insert_new_player_data(const account_t *user, const pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function retrieves the currently logged-in players name & surname to display in the 'stats' page
  *
  * @param db A pointer to the sqlite3 db connection
@@ -294,7 +291,6 @@ bool retrieve_accounts_table(sqlite3 *db, account_t *player, const char *usernam
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This functions retrieves stats of the currently logged-in player from the 'players' table
  *
  * @param db Pointer to the sqlite3 db connection
@@ -361,7 +357,6 @@ bool retrieve_players_table(sqlite3 *db, pstats_t *playerData, const char *usern
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This functions retrieves data of the currently logged-in player from the 'badges' table
  *
  * @param db Pointer to the sqlite3 db connection
@@ -414,7 +409,6 @@ bool retrieve_badges_table(sqlite3 *db, pstats_t *playerData, const char *userna
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function retrieves updated information of currently logged in player
  *        from the database and updates the player stats structure members accordingly.
  *        It is usually called after a new signup, login, gameplay, or after account is editted
@@ -448,7 +442,6 @@ bool get_player_data(const char *username, pstats_t *player) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function updates a specific column on a given table in the database.
  *
  * @param db A pointer to the SQLite database connection.
@@ -495,7 +488,6 @@ bool update_player_data(sqlite3 *db, const char *col, const char *uname, const c
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function deletes player data from the database in the specified table.
  *
  * @param db The SQLite database connection.
@@ -536,7 +528,6 @@ bool delete_player_data(sqlite3 *db, const pstats_t *player, const char *tableNa
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function updates the currently logged in player's score in the database.
  *
  * @param player A pointer to the user account structure representing the current player.
@@ -599,7 +590,6 @@ bool update_score(pstats_t *player, const uint32_t currentScore, const uint32_t 
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function updates the currently logged in player's stats in the database,
  *        It is called after every played game.
  *
@@ -694,7 +684,6 @@ bool update_gamestats(const pstats_t *player) {
 }
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function clears/resets all the player stats in the 'players' table
  *
  * @param db A pointer to the SQLite database connection
@@ -744,7 +733,6 @@ bool reset_players_table(sqlite3 *db, const char *uname) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function clears/resets all the currently logged-in players data in the 'badges' table
  *
  * @param db A pointer to the SQLite database connection
@@ -787,7 +775,6 @@ bool reset_badges_table(sqlite3 *db, const char *uname) {
 
 
 /**
- * @author Muhammed A. Senghore
  * @brief This function checks if the 'database' file already exist. If not, it creates
  *        and populates the database file with a default user account, player details,
  *        & quiz questions & answers.
