@@ -411,8 +411,8 @@ void edit_account(const int box_offset, pstats_t *player) {
     struct_memset(player, sizeof(pstats_t));
     if (!get_player_data(uName, player)) {
         print_error(tmp_x, tmp_y + 4, "Failed to get updated data, please login again!...");
-        free(player);
-        delay(2000);
+        //free(player);
+        delay(1400);
         logout(box_offset, player);
     }
     cgetch();
